@@ -2,7 +2,7 @@
 // Called by Pi SDK when payment is ready for server approval
 // Pi requires this within 60 seconds or payment expires
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   // Allow cross-origin requests from Pi Browser
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
